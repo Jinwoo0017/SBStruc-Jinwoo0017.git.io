@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SBStruct</title>
+        <link rel = "icon" href = "../img/logo/logo.png">
+        <link rel = "stylesheet" href = "../css/header.css">
+        <link rel = "stylesheet" href = "../css/header-responsive.css">
+        <link rel = "stylesheet" href = "../css/contact.css">
+        <link rel = "stylesheet" href = "../css/contact-responsive.css">
+        <script src = "../js/header-subpages.js"></script>    
+        <script src = "../js/contact.js"></script>    
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <!-- TopNav -->
+
+            <div class = "topnav">
+                <div class = "title">
+                    <a href = "../index.html">
+                        <img src = "../img/logo/Brand.png">
+                    </a>
+                </div>
+
+                <div class = "navbtns">
+                    <a href = "../subpages/about.html">
+                        ABOUT US
+                    </a>
+
+                    <a href = "../subpages/services.html">
+                        SERVICES
+                    </a>
+
+                    <a href = "../subpages/projects.html">
+                        PROJECTS
+                    </a>
+
+                    <a class = "contact active" href = "../subpages/contact.html">
+                        CONTACT US  
+                    </a>
+                </div>
+
+                <div class = "burger">
+                    <a href = "javascript:void(0)" onclick = "SideBarOpen()" onmouseover = "BurgerOn()" onmouseleave = "BurgerOff()">
+                        <img id = "burger" src = "../img/icon/burger.png">
+                    </a>
+                </div>
+            </div>
+
+        <!-- SideNav -->
+
+            <div class = "sidenav" id = "sidenav">
+                <div class = "svg">
+                    <a href = "javascript:void(0)" onclick = "SideBarClose()">
+                        <img id = "svg" src = "../img/icon/x.png">
+                    </a>
+                </div>
+
+                <div class = "header-t">
+                    <a href = "../index.html">
+                        <img src = "../img/gif/projects.gif">
+                    </a>
+                </div>
+
+                <div class = "title">
+                    <a href = "../index.html" onmouseover = "SideNavTitleOn()" onmouseleave = "SideNavTitleOut()">
+                        <img id = "sidenavtitle" src = "../img/logo/sidenav-brand.png">
+                    </a>
+                </div>
+
+                <div class = "header-m">
+                    <img src = "../img/gif/projects-h.gif">
+                </div>
+
+                <div class = "navbtns">
+                    <a href = "../subpages/about.html">
+                        ABOUT US
+                    </a>
+
+                    <a href = "../subpages/services.html">
+                        SERVICES
+                    </a>
+
+                    <a href = "../subpages/projects.html">
+                        PROJECTS
+                    </a>
+
+                    <a class = "active" href = "../subpages/contact.html">
+                        CONTACT US  
+                    </a>
+                </div>
+            </div>
+
+            <div class = "filter" id = "filter" onclick = "SideBarClose()">
+            </div>
+
+        <!-- Header -->
+
+            <div class = "header">
+                <img src = "../img/header/contacts.png">
+            </div>
+
+        <!-- Intro -->
+
+            <div class = "intro">
+                <div class = "company">
+                    <div class = "tagline">
+                        <p>
+                            <span>
+                                LEAVE A
+                            </span>
+    
+                            <span>
+                                MESSAGE
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "content">
+                    <div class = "container">
+                        <img src = "../img/logo/about-brand.png">
+                        
+                        <div class = "one" id = "info">
+                            <table>
+                                <tr>
+                                    <td>
+                                        Address:
+                                    </td>
+
+                                    <td>
+                                        No. 8 Blk 9 Lot 21, Lira St., Villa Carolina 1, Tunasan, Muntinlupa City
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Landline:
+                                    </td>
+
+                                    <td>
+                                        (02) 8541-5266
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Mobile:
+                                    </td>
+
+                                    <td>
+                                        09177289791/09099826718
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        E-mail:
+                                    </td>
+
+                                    <td>
+                                        sbstruc@gmail.com
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class = "two" id = "map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.563139011805!2d121.04934138210882!3d14.368820492116223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d1a880fad521%3A0xab69ef7832f2ed6e!2sPaz%20G.%20Dowell%20Apt.%20Block%209%20Lot%2020%20Lira%20St.!5e0!3m2!1sen!2sph!4v1657283899335!5m2!1sen!2sph" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class = "three" id = "fbs">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSBStruc&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+
+                        <div class = "buttons">
+                            <a href = "javascript:void(0)">
+                                <div class = "one" id = "one" onclick = "contact()">
+                                    <img src = "../img/icon/7.png">
+                                </div>
+                            </a>
+
+                            <a href = "javascript:void(0)" onclick = "map()">
+                                <div class = "two" id = "two">
+                                    <img src = "../img/icon/8.png">
+                                </div>
+                            </a>
+
+                            <a href = "javascript:void(0)" onclick = "fb()">
+                                <div class = "three" id = "three">
+                                    <img src = "../img/icon/2.png">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "form">
+                        <div class = "form-container">
+                            <form onsubmit="sendEmail(); reset(); return false;">
+                                <input type="text" autocomplete="off" id="name" placeholder="Full Name" required>
+
+                                <input type="email" id="email" autocomplete="off" placeholder="Email Address" required>
+
+                                <input type="tel" id="number" autocomplete="off" placeholder="Contact Number" required>
+
+                                <textarea id="message" placeholder="Type your message here..." autocomplete="off" required></textarea>
+
+                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "forms">
+                </div>
+            </div>
+
+        <!-- Footer -->
+
+            <div class = "footer">
+                <div class = "copyright">
+                    <p>
+                        SBStruc ©Copyright 2022 All Rights Reserved
+                    </p>
+                </div>
+
+                <div class = "icons">
+                    <a href = "mailto:hanz.baga@tup.edu.ph" target="_blank">
+                        <img id = "email" src="../img/icon/1.png">
+                    </a>
+
+                    <a href = "https://www.facebook.com/SBStruc" target="_blank">
+                        <img id = "fb" src="../img/icon/2.png">
+                    </a>
+
+                    <a href = "http://m.me/SBStruc" target="_blank">
+                        <img id = "msgr" src="../img/icon/3.png">
+                    </a>
+
+                    <a href = "https://www.instagram.com/sbstruc/" target="_blank">
+                        <img id = "ig" src="../img/icon/4.png">
+                    </a>
+
+                    <a href = "sms:+639177289791" target="_blank">
+                        <img id = "sms" src="../img/icon/5.png">
+                    </a>
+
+                    <a href = "tel:+0285415266" target="_blank">
+                        <img id = "call" src="../img/icon/6.png">
+                    </a>
+                </div>
+            </div>
+    </body>
+</html>

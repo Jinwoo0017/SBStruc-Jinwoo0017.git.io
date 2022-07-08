@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SBStruct</title>
+        <link rel = "icon" href = "../img/logo/logo.png">
+        <link rel = "stylesheet" href = "../css/header.css">
+        <link rel = "stylesheet" href = "../css/header-responsive.css">
+        <link rel = "stylesheet" href = "../css/services.css">
+        <link rel = "stylesheet" href = "../css/services-responsive.css">
+        <script src = "../js/header-subpages.js"></script>    
+        <script src = "../js/services.js"></script>    
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <!-- TopNav -->
+
+            <div class = "topnav">
+                <div class = "title">
+                    <a href = "../index.html">
+                        <img src = "../img/logo/Brand.png">
+                    </a>
+                </div>
+
+                <div class = "navbtns">
+                    <a href = "../subpages/about.html">
+                        ABOUT US
+                    </a>
+
+                    <a class = "active" href = "../subpages/services.html">
+                        SERVICES
+                    </a>
+
+                    <a href = "../subpages/projects.html">
+                        PROJECTS
+                    </a>
+
+                    <a class = "contact" href = "../subpages/contact.html">
+                        CONTACT US  
+                    </a>
+                </div>
+
+                <div class = "burger">
+                    <a href = "javascript:void(0)" onclick = "SideBarOpen()" onmouseover = "BurgerOn()" onmouseleave = "BurgerOff()">
+                        <img id = "burger" src = "../img/icon/burger.png">
+                    </a>
+                </div>
+            </div>
+
+        <!-- SideNav -->
+
+            <div class = "sidenav" id = "sidenav">
+                <div class = "svg">
+                    <a href = "javascript:void(0)" onclick = "SideBarClose()">
+                        <img id = "svg" src = "../img/icon/x.png">
+                    </a>
+                </div>
+
+                <div class = "header-t">
+                    <a href = "../index.html">
+                        <img src = "../img/gif/projects.gif">
+                    </a>
+                </div>
+
+                <div class = "title">
+                    <a href = "../index.html" onmouseover = "SideNavTitleOn()" onmouseleave = "SideNavTitleOut()">
+                        <img id = "sidenavtitle" src = "../img/logo/sidenav-brand.png">
+                    </a>
+                </div>
+
+                <div class = "header-m">
+                    <img src = "../img/gif/projects-h.gif">
+                </div>
+
+                <div class = "navbtns">
+                    <a href = "../subpages/about.html">
+                        ABOUT US
+                    </a>
+
+                    <a  class = "active" href = "../subpages/services.html">
+                        SERVICES
+                    </a>
+
+                    <a href = "../subpages/projects.html">
+                        PROJECTS
+                    </a>
+
+                    <a href = "../subpages/contact.html">
+                        CONTACT US  
+                    </a>
+                </div>
+            </div>
+
+            <div class = "filter" id = "filter" onclick = "SideBarClose()">
+            </div>
+
+        <!-- Header -->
+
+            <div class = "header">
+                <img src = "../img/header/services.png">
+            </div>
+
+        <!-- Intro -->
+
+            <div class = "intro">
+                <div class = "company">
+                    <div class = "tagline">
+                        <p>
+                            <span>
+                                OUR
+                            </span>
+    
+                            <span>
+                                SERVICES
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "content">
+                    <p>
+                        Learn more about the specific service by clicking the image.
+                    </p>
+                </div>
+
+                <div class = "team">
+                    <div class = "people">
+                        <a href = "javascript:void(0)" onclick = "popupOne()">
+                            <img src = "../img/servicehovers/1-h.png">
+                        </a>
+                    </div>
+
+                    <div class = "people">
+                        <a href = "javascript:void(0)" onclick = "popupTwo()">
+                            <img src = "../img/servicehovers/2-h.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "team">
+                    <div class = "people">
+                        <a href = "javascript:void(0)" onclick = "popupThree()">
+                            <img src = "../img/servicehovers/3-h.png">
+                        </a>
+                    </div>
+
+                    <div class = "people">
+                        <a href = "javascript:void(0)" onclick = "popupFour()">
+                            <img src = "../img/servicehovers/4-h.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "team">
+                    <div class = "people">
+                        <a href = "javascript:void(0)" onclick = "popupFour()">
+                            <img src = "../img/servicehovers/5-h.png">
+                        </a>
+                    </div>
+
+                    <div class = "people">
+                        <a href = "javascript:void(0)" onclick = "popupSix()">
+                            <img src = "../img/servicehovers/6-h.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Pop Up -->
+
+            <div class = "one" id = "one">
+                <div class = "title"> 
+                    <a href = "javascript:void(0)" onclick = "popupOff()">
+                        <img src = "../img/icon/Xb.png">
+                    </a>
+                </div>
+
+                <div class = "popcontent">
+                    <div class = "pic">
+                        <img src = "../img/servicehovers/STRUCTURAL ANALYSIS.gif">
+                    </div>
+    
+                    <div class = "info">
+                        <p>
+                            Is a method done to determine safe and economical specifications for a structure, and to ensure that a planned structure will be sufficiently strong to carry its intended load.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "two" id = "two">
+                <div class = "title"> 
+                    <a href = "javascript:void(0)" onclick = "popupOff()">
+                        <img src = "../img/icon/Xb.png">
+                    </a>
+                </div>
+
+                <div class = "popcontent">
+                    <div class = "pic">
+                        <img src = "../img/servicehovers/STRUCTURAL INSPECTION.gif">
+                    </div>
+    
+                    <div class = "info">
+                        <p>
+                            Is typically a visual inspection done to confirm the structural soundness and integrity of a given structure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "three" id = "three">
+                <div class = "title"> 
+                    <a href = "javascript:void(0)" onclick = "popupOff()">
+                        <img src = "../img/icon/Xb.png">
+                    </a>
+                </div>
+
+                <div class = "popcontent">
+                    <div class = "pic">
+                        <img src = "../img/servicehovers/REBAR SCANNING.gif">
+                    </div>
+    
+                    <div class = "info">
+                        <p>
+                            Is a non-destructive method done to detect rebars, post-tensioned cables, and electrical conduits within concrete structure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "four" id = "four">
+                <div class = "title"> 
+                    <a href = "javascript:void(0)" onclick = "popupOff()">
+                        <img src = "../img/icon/Xb.png">
+                    </a>
+                </div>
+
+                <div class = "popcontent">
+                    <div class = "pic">
+                        <img src = "../img/servicehovers/REBOUND HAMMER TEST.gif">
+                    </div>
+    
+                    <div class = "info">
+                        <p>
+                            Is a non-destructive testing method of concrete which provide a convenient and rapid indication of the compressive strength and uniformity of the concrete.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "five" id = "five">
+                <div class = "title"> 
+                    <a href = "javascript:void(0)" onclick = "popupOff()">
+                        <img src = "../img/icon/Xb.png">
+                    </a>
+                </div>
+
+                <div class = "popcontent">
+                    <div class = "pic">
+                        <img src = "../img/servicehovers/CONCRETE CORING.gif">
+                    </div>
+    
+                    <div class = "info">
+                        <p>
+                            Is a destructive process of removing a cylindrical section of concrete from the structure for concrete strength determination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "six" id = "six">
+                <div class = "title"> 
+                    <a href = "javascript:void(0)" onclick = "popupOff()">
+                        <img src = "../img/icon/Xb.png">
+                    </a>
+                </div>
+
+                <div class = "popcontent">
+                    <div class = "pic">
+                        <img src = "../img/servicehovers/TRAFFIC IMPACT ASSESMENT.gif">
+                    </div>
+    
+                    <div class = "info">
+                        <p>
+                            Is a technical analysis that is done to better understand, assess and mitigate any identified traffic and transportation issues associated with a proposed development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "filterp" id = "filterp" onclick = "popupOff()">
+            </div>
+        
+        <!-- Footer -->
+
+            <div class = "footer">
+                <div class = "copyright">
+                    <p>
+                        SBStruc ©Copyright 2022 All Rights Reserved
+                    </p>
+                </div>
+
+                <div class = "icons">
+                    <a href = "mailto:hanz.baga@tup.edu.ph" target="_blank">
+                        <img id = "email" src="../img/icon/1.png">
+                    </a>
+
+                    <a href = "https://www.facebook.com/SBStruc" target="_blank">
+                        <img id = "fb" src="../img/icon/2.png">
+                    </a>
+
+                    <a href = "http://m.me/SBStruc" target="_blank">
+                        <img id = "msgr" src="../img/icon/3.png">
+                    </a>
+
+                    <a href = "https://www.instagram.com/sbstruc/" target="_blank">
+                        <img id = "ig" src="../img/icon/4.png">
+                    </a>
+
+                    <a href = "sms:+639177289791" target="_blank">
+                        <img id = "sms" src="../img/icon/5.png">
+                    </a>
+
+                    <a href = "tel:+0285415266" target="_blank">
+                        <img id = "call" src="../img/icon/6.png">
+                    </a>
+                </div>
+            </div>
+    </body>
+</html>

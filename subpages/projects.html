@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SBStruct</title>
+        <link rel = "icon" href = "../img/logo/logo.png">
+        <link rel = "stylesheet" href = "../css/header.css">
+        <link rel = "stylesheet" href = "../css/header-responsive.css">
+        <link rel = "stylesheet" href = "../css/project.css">
+        <link rel = "stylesheet" href = "../css/project-responsive.css">
+        <script src = "../js/header-subpages.js"></script>
+        <script src = "../js/project.js"></script>      
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <!-- TopNav -->
+
+            <div class = "topnav">
+                <div class = "title">
+                    <a href = "../index.html">
+                        <img src = "../img/logo/Brand.png">
+                    </a>
+                </div>
+
+                <div class = "navbtns">
+                    <a href = "../subpages/about.html">
+                        ABOUT US
+                    </a>
+
+                    <a href = "../subpages/services.html">
+                        SERVICES
+                    </a>
+
+                    <a class = "active" href = "../subpages/projects.html">
+                        PROJECTS
+                    </a>
+
+                    <a class = "contact" href = "../subpages/contact.html">
+                        CONTACT US  
+                    </a>
+                </div>
+
+                <div class = "burger">
+                    <a href = "javascript:void(0)" onclick = "SideBarOpen()" onmouseover = "BurgerOn()" onmouseleave = "BurgerOff()">
+                        <img id = "burger" src = "../img/icon/burger.png">
+                    </a>
+                </div>
+            </div>
+
+        <!-- SideNav -->
+
+        <div class = "sidenav" id = "sidenav">
+            <div class = "svg">
+                <a href = "javascript:void(0)" onclick = "SideBarClose()">
+                    <img id = "svg" src = "../img/icon/x.png">
+                </a>
+            </div>
+
+            <div class = "header-t">
+                <a href = "../index.html">
+                    <img src = "../img/gif/projects.gif">
+                </a>
+            </div>
+
+            <div class = "title">
+                <a href = "../index.html" onmouseover = "SideNavTitleOn()" onmouseleave = "SideNavTitleOut()">
+                    <img id = "sidenavtitle" src = "../img/logo/sidenav-brand.png">
+                </a>
+            </div>
+
+            <div class = "header-m">
+                <img src = "../img/gif/projects-h.gif">
+            </div>
+
+            <div class = "navbtns">
+                <a href = "../subpages/about.html">
+                    ABOUT US
+                </a>
+
+                <a href = "../subpages/services.html">
+                    SERVICES
+                </a>
+
+                <a class = "active" href = "../subpages/projects.html">
+                    PROJECTS
+                </a>
+
+                <a href = "../subpages/contact.html">
+                    CONTACT US  
+                </a>
+            </div>
+        </div>
+
+            <div class = "filter" id = "filter" onclick = "SideBarClose()">
+            </div>
+
+        <!-- Header -->
+
+            <div class = "header">
+                <img src = "../img/header/project.png">
+            </div>
+
+        <!-- Projects -->
+            <div class = "projects">
+                <div class = "one" id = "one">
+                    <div class = "strip">
+                            <img id = "onep" onmouseover = "onepOn()" onmouseleave = "onepOff()"  src = "../img/projects/1.png">
+                            <img id = "twop" onmouseover = "twopOn()" onmouseleave = "twopOff()"  src = "../img/projects/2.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "threep" onmouseover = "threepOn()" onmouseleave = "threepOff()"  src = "../img/projects/3.png">
+                        <img id = "fourp" onmouseover = "fourpOn()" onmouseleave = "fourpOff()"  src = "../img/projects/4.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "fivep" onmouseover = "fivepOn()" onmouseleave = "fivepOff()"  src = "../img/projects/5.png">
+                        <img id = "sixp" onmouseover = "sixpOn()" onmouseleave = "sixpOff()"  src = "../img/projects/6.png">
+                    </div>
+    
+                    <div class = "button" id = "oneb">
+                        <a href = "#two" onclick = "showmore1()">
+                            SEE MORE...
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "two" id = "two">
+                    <div class = "strip">
+                        <img id = "sevenp" onmouseover = "sevenpOn()" onmouseleave = "sevenpOff()"  src = "../img/projects/7.png">
+                        <img id = "eightp" onmouseover = "eightpOn()" onmouseleave = "eightpOff()"  src = "../img/projects/8.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "ninep" onmouseover = "ninepOn()" onmouseleave = "ninepOff()"  src = "../img/projects/9.png">
+                        <img id = "tenp" onmouseover = "tenpOn()" onmouseleave = "tenpOff()"  src = "../img/projects/10.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "elevenp" onmouseover = "elevenpOn()" onmouseleave = "elevenpOff()"  src = "../img/projects/11.png">
+                        <img id = "twelvep" onmouseover = "twelvepOn()" onmouseleave = "twelvepOff()"  src = "../img/projects/12.png">
+                    </div>
+    
+                    <div class = "button" id = "twob">
+                        <a href = "#three" onclick = "showmore2()">
+                            SEE MORE...
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "three" id = "three">
+                    <div class = "strip">
+                        <img id = "thirteenp" onmouseover = "thirteenpOn()" onmouseleave = "thirteenpOff()"  src = "../img/projects/13.png">
+                        <img id = "fourteenp" onmouseover = "fourteenpOn()" onmouseleave = "fourteenpOff()"  src = "../img/projects/14.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "fifteenp" onmouseover = "fifteenpOn()" onmouseleave = "fifteenpOff()"  src = "../img/projects/15.png">
+                        <img id = "sixteenp" onmouseover = "sixteenpOn()" onmouseleave = "sixteenpOff()"  src = "../img/projects/16.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "seventeenp" onmouseover = "seventeenpOn()" onmouseleave = "seventeenpOff()"  src = "../img/projects/17.png">
+                        <img id = "eighteenp" onmouseover = "eighteenpOn()" onmouseleave = "eighteenpOff()"  src = "../img/projects/18.png">
+                    </div>
+    
+                    <div class = "button" id = "threeb">
+                        <a href = "#four" onclick = "showmore3()">
+                            SEE MORE...
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "four" id = "four">
+                    <div class = "strip">
+                        <img id = "nineteenp" onmouseover = "nineteenpOn()" onmouseleave = "nineteenpOff()"  src = "../img/projects/19.png">
+                        <img id = "twentyp" onmouseover = "twentypOn()" onmouseleave = "twentypOff()"  src = "../img/projects/20.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "twentyonep" onmouseover = "twentyonepOn()" onmouseleave = "twentyonepOff()"  src = "../img/projects/21.png">
+                        <img id = "twentytwop" onmouseover = "twentytwopOn()" onmouseleave = "twentytwopOff()"  src = "../img/projects/22.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "twentythreep" onmouseover = "twentythreepOn()" onmouseleave = "twentythreepOff()"  src = "../img/projects/23.png">
+                        <img id = "twentyfourp" onmouseover = "twentyfourpOn()" onmouseleave = "twentyfourpOff()"  src = "../img/projects/24.png">
+                    </div>
+    
+                    <div class = "button" id = "fourb">
+                        <a href = "#five" onclick = "showmore4()">
+                            SEE MORE...
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "five" id = "five">
+                    <div class = "strip">
+                        <img id = "twentyfivep" onmouseover = "twentyfivepOn()" onmouseleave = "twentyfivepOff()"  src = "../img/projects/25.png">
+                        <img id = "twentysixp" onmouseover = "twentysixpOn()" onmouseleave = "twentysixpOff()"  src = "../img/projects/26.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "twentysevenp" onmouseover = "twentysevenpOn()" onmouseleave = "twentysevenpOff()"  src = "../img/projects/27.png">
+                        <img id = "twentyeightp" onmouseover = "twentyeightpOn()" onmouseleave = "twentyeightpOff()"  src = "../img/projects/28.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "twentyninep" onmouseover = "twentyninepOn()" onmouseleave = "twentyninepOff()"  src = "../img/projects/29.png">
+                        <img id = "thirtyp" onmouseover = "thirtypOn()" onmouseleave = "thirtypOff()"  src = "../img/projects/30.png">
+                    </div>
+    
+                    <div class = "button" id = "fiveb">
+                        <a href = "#six" onclick = "showmore5()">
+                            SEE MORE...
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "six" id = "six">
+                    <div class = "strip">
+                        <img id = "thirtyonep" onmouseover = "thirtyonepOn()" onmouseleave = "thirtyonepOff()"  src = "../img/projects/31.png">
+                        <img id = "thirtytwop" onmouseover = "thirtytwopOn()" onmouseleave = "thirtytwopOff()"  src = "../img/projects/32.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "thirtythreep" onmouseover = "thirtythreepOn()" onmouseleave = "thirtythreepOff()"  src = "../img/projects/33.png">
+                        <img id = "thirtyfourp" onmouseover = "thirtyfourpOn()" onmouseleave = "thirtyfourpOff()"  src = "../img/projects/34.png">
+                    </div>
+
+                    <div class = "strip">
+                        <img id = "thirtyfivep" onmouseover = "thirtyfivepOn()" onmouseleave = "thirtyfivepOff()"  src = "../img/projects/35.png">
+                        <img id = "thirtysixp" onmouseover = "thirtysixpOn()" onmouseleave = "thirtysixpOff()"  src = "../img/projects/36.png">
+                    </div>
+    
+                    <div class = "button" id = "sixb">
+                        <a href = "#one" onclick = "showless6()">
+                            SEE LESS...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- Footer -->
+
+            <div class = "footer">
+                <div class = "copyright">
+                    <p>
+                        SBStruc ©Copyright 2022 All Rights Reserved
+                    </p>
+                </div>
+
+                <div class = "icons">
+                    <a href = "mailto:hanz.baga@tup.edu.ph" target="_blank">
+                        <img id = "email" src="../img/icon/1.png">
+                    </a>
+
+                    <a href = "https://www.facebook.com/SBStruc" target="_blank">
+                        <img id = "fb" src="../img/icon/2.png">
+                    </a>
+
+                    <a href = "http://m.me/SBStruc" target="_blank">
+                        <img id = "msgr" src="../img/icon/3.png">
+                    </a>
+
+                    <a href = "https://www.instagram.com/sbstruc/" target="_blank">
+                        <img id = "ig" src="../img/icon/4.png">
+                    </a>
+
+                    <a href = "sms:+639177289791" target="_blank">
+                        <img id = "sms" src="../img/icon/5.png">
+                    </a>
+
+                    <a href = "tel:+0285415266" target="_blank">
+                        <img id = "call" src="../img/icon/6.png">
+                    </a>
+                </div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+/* Fonts */
+
+@font-face {
+    font-family: LD;
+    src: url(../fonts/LexendDeca.ttf);
+}
+
+@font-face {
+    font-family: T;
+    src: url(../fonts/Telegraf.otf);
+}
+
+/* TopNav */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.topnav {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0B1654;
+    z-index: 10;
+}
+
+.topnav .title {
+    display: flex;
+    float: left;
+}
+
+.topnav .title img {
+    padding:0;
+}
+
+.topnav .navbtns {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.topnav .navbtns a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: LD;
+    transition: 0.3s ease-in-out;
+}
+
+.topnav .navbtns a.active, 
+.topnav .navbtns a:hover {
+    color: #FC600A;
+}
+
+.topnav .navbtns a.contact {
+    border: 1px solid #FFFFFF;
+}
+
+.topnav .navbtns a.contact.active {
+    border: 1px solid #FC600A;
+}
+
+.topnav .navbtns a.contact:hover {
+    border: 1px solid #FC600A;
+}
+
+.topnav .burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+/* SideNav */
+
+.sidenav {
+    display: none;
+    position: fixed;
+    z-index: 13;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    left: -70%;
+    transition: 0s ease-in-out;
+    background: #0B1654;
+}
+
+.sidenav .svg {
+    position: absolute;
+    top: 5%; 
+    right: 5%;
+}
+
+.sidenav .title {
+    display: none;
+    width: 90%;
+}
+
+.sidenav .header-t, .sidenav .header-m {
+    width: 100%;
+}
+
+.sidenav .header-m {
+    display: none;
+}
+
+.sidenav .title img {
+    width: 60%;
+}
+
+.sidenav .header-t img, .sidenav .header-m img {
+    width: 100%;
+}
+
+.sidenav .navbtns {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.sidenav .navbtns a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: LD;
+    transition: 0.3s ease-in-out;
+}
+
+.sidenav .navbtns a.active,
+.sidenav .navbtns a:hover, 
+.sidenav .navbtns a:focus {
+    background: #FC600A;
+}
+
+.sidenav .navbtns a:hover, 
+.sidenav .navbtns a:focus {
+    margin:5px 0;
+}
+
+.filter {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    height: 100%;
+    width:100%;
+    left:-100%;
+    background: #1A1A1E;
+    opacity: 90%;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background: #0B1654;
+}
+
+.footer .copyright {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer .copyright p {
+    color: #FFFFFF;
+    font-family: LD;
+    font-weight: bold;
+}
+
+.footer .icons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0B1654;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #FC600A;
+}
+
+::-webkit-scrollbar-thumb:focus {
+    background: #FC600A; 
+}
+
+

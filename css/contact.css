@@ -1,0 +1,203 @@
+/* Header */
+
+.header {
+    position: relative;
+    display:inline-block;
+    width: 100%;
+}
+
+.header img {
+    width: 100%;
+}
+
+/* Content */
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: -4px;
+    overflow-x: hidden;
+}
+
+.intro .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.intro .company .tagline {
+    width: 100%;
+    display:flex;
+    width: fit-content;
+    border-bottom: 1px solid #0B1654;
+}
+
+.intro .company .tagline p {
+    font-family: T;
+    font-weight: bold;
+    color: #0B1654;
+    padding: 10px;
+    text-align: center;
+}
+
+.intro .company .tagline p span:nth-child(even) {
+    color: #FC600A;
+}
+
+.intro .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.intro .content .container, .intro .content .form {
+    width: 48%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1%;
+}
+
+.intro .content .container img {
+   width: 60%; 
+}
+
+.intro .content .container .one,
+.intro .content .container .two,
+.intro .content .container .three {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.intro .content .container .two,
+.intro .content .container .three {
+    display: none;
+}
+
+.intro .content .container .one table {
+    width: 90%;
+}
+
+.intro .content .container .one table tr td {
+    padding: 10px;
+    font-family: LD;
+    border: 2px solid #0B1654;
+}
+
+.intro .content .container .one table tr td:nth-child(1) {
+    text-align: center;
+}
+
+.intro .content .container .one table tr td:nth-child(2) {
+    width: 70%;
+}
+
+.intro .content .container .two iframe {
+    border: 2px solid #0B1654;
+    width: 80%;
+    height: 30vw;
+}
+
+.intro .content .container .three iframe {
+   border: 2px solid #0B1654;
+   width: 340px;
+   height: 500px;
+}
+
+.intro .content .container .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.intro .content .container .buttons .one, 
+.intro .content .container .buttons .two, 
+.intro .content .container .buttons .three {
+    width: 4.5vw;
+    height: 4.5vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0B1654;
+}
+
+.intro .content .container .buttons .one {
+    background: #FC600A;
+}
+
+.intro .content .container .buttons .one img,
+.intro .content .container .buttons .two img,
+.intro .content .container .buttons .three img {
+    width: 80%;
+}
+
+.intro .content .form .form-container {
+    width: 80%;
+    background: #EFE9E9;
+    padding: 5%;
+}
+
+.intro .content .form .form-container form {
+    background: #FFFFFF;
+    padding: 5%;
+    width: 90%;
+    font-family: LD;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    width: 100%;
+    padding: 20px 2.5%;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: LD;
+}
+
+button[type = submit] {
+    width: 100%;
+    display: inline block;
+    padding: 20px;
+    font-family: LD;
+    color: #FFFFFF;
+    background: #0B1654;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+button[type = submit]:hover {
+    background: #FC600A;
+}
+
+.intro .content .form .form-container form textarea {
+    width: 100%;
+    height: 15vw;
+    padding: 20px 2.5%;
+    margin: 10px 0;
+    resize:none;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: LD;
+}
+
+

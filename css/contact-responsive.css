@@ -1,0 +1,176 @@
+/* 4K */
+
+@media screen and (max-width: 2560px) {
+    .header {
+        margin-top:200px;
+    }
+
+    .intro .company .tagline p {
+        font-size: 80px;
+    }
+
+    .intro .content .container .one table tr td {
+        font-size: 40px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    button[type = submit],
+    .intro .content .form .form-container form textarea {
+        font-size: 20px;
+    }
+}
+
+/* 4K - R */
+
+@media screen and (max-width: 1920px) {
+    .header {
+        margin-top:150px;
+    }
+
+    .intro .company .tagline p {
+        font-size: 60px;
+    }
+
+    .intro .content .container .one table tr td {
+        font-size: 30px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    button[type = submit],
+    .intro .content .form .form-container form textarea {
+        font-size: 20px;
+    }
+}
+
+/* Laptop-L */
+
+@media screen and (max-width: 1440px) {
+    .header {
+        margin-top:100px;
+    }
+
+    .intro .company .tagline p {
+        font-size: 40px;
+    }
+
+    .intro .content .container .one table tr td {
+        font-size: 20px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    button[type = submit],
+    .intro .content .form .form-container form textarea {
+        font-size: 15px;
+    }
+}
+
+/* Laptop */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        margin-top:80px;
+    }
+
+    .intro .company .tagline p {
+        font-size: 30px;
+    }
+
+    .intro .content .container .one table tr td {
+        font-size: 15px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    button[type = submit],
+    .intro .content .form .form-container form textarea {
+        font-size: 12px;
+    }
+
+    .intro .content .form {
+        width:90%;
+        margin-top: 20px;
+    }
+
+    .intro .content .form .form-container form textarea {
+        height: 30vw;
+    }
+}
+
+/* Tablets */ 
+
+@media screen and (max-width: 810px) {
+    .header {
+        margin-top:70px;
+    }
+
+    .intro .company .tagline p {
+        font-size: 25px;
+    }
+
+    .intro .company {
+        width: 100%;
+    }
+
+    .intro .content {
+        flex-direction: column;
+    }
+
+    .intro .content .container {
+        width: 100%;
+    }
+
+    .intro .content .container .buttons .one, 
+    .intro .content .container .buttons .two, 
+    .intro .content .container .buttons .three {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .intro .content .container .two iframe {
+        height: 50vw;
+    }
+}
+
+/* Extra */
+
+@media screen and (max-width: 350px) {
+    .intro .content .container .three iframe {
+        width: 90%;
+        height: 70px;
+    }
+}
+
+/* Mobile */ 
+
+@media screen and (max-width: 450px) {
+    .intro .company .tagline p {
+        font-size: 20px;
+    }
+
+    .intro .content .container .one table tr td,
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    button[type = submit],
+    .intro .content .form .form-container form textarea {
+        font-size: 12px;
+    }
+
+    button[type = submit] {
+        padding: 10px;
+    }
+
+    .intro .content .container .buttons .one, 
+    .intro .content .container .buttons .two, 
+    .intro .content .container .buttons .three {
+        width: 15vw;
+        height: 15vw;
+    }
+}

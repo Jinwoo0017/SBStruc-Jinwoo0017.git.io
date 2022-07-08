@@ -1,0 +1,241 @@
+/* Header */
+
+.header {
+    position: relative;
+    display:inline-block;
+    width: 100%;
+}
+
+.header img {
+    width: 100%;
+}
+
+/* Content */
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: -4px;
+    overflow-x: hidden;
+}
+
+.intro:nth-child(even) {
+    background: #EFEBE2;
+}
+
+.intro .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.intro .company .tagline {
+    width: 100%;
+    display:flex;
+    width: fit-content;
+    border-bottom: 1px solid #0B1654;
+}
+
+.intro .company .tagline p {
+    font-family: T;
+    font-weight: bold;
+    color: #0B1654;
+    padding: 10px;
+}
+
+.intro .company .tagline p span:nth-child(even) {
+    color: #FC600A;
+}
+
+.intro .company .logo {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .company .logo img {
+    width: 40%;
+    padding-top: 20px;
+}
+
+.intro .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.intro .content p {
+    font-family: LD;
+    width: 90%;
+    text-align: justify;
+    text-align: center;
+}
+
+.intro .team {
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.intro .team:first-child {
+    margin-top: 20px;
+}
+
+.intro .team .people {
+    width: 48%;
+    margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro .team .people img {
+    width: 100%;
+    border: 2px solid #0B1654;
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.82);
+}
+
+.intro .team .people .title p,
+.intro .team .people .name p  {
+    font-family: LD;
+}
+
+.intro .team .people .title p {
+    font-weight: bold;
+}
+
+.intro .team .people .name p  {
+    margin-top: 10px;
+}
+
+.filterp {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    height: 100%;
+    width:100%;
+    background: #1A1A1E;
+    opacity: 90%;
+}
+
+.one, .two, .three, .four, .five, .six, .seven {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    display: none;
+    background: #FFFFFF;
+    z-index: 13;
+    align-items: center;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.one .title,
+.two .title,
+.three .title,
+.four .title,
+.five .title,
+.six .title,
+.seven .title {
+    display: flex;
+    width: 95%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2.5% 2.5%;
+}
+
+.one .popcontent,
+.two .popcontent,
+.three .popcontent,
+.four .popcontent,
+.five .popcontent,
+.six .popcontent,
+.seven .popcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    margin: -5% 0 5% 0;
+}
+
+.one .popcontent .pic,
+.two .popcontent .pic,
+.three .popcontent .pic,
+.four .popcontent .pic,
+.five .popcontent .pic,
+.six .popcontent .pic,
+.seven .popcontent .pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.one .popcontent .pic img,
+.two .popcontent .pic img,
+.three .popcontent .pic img,
+.four .popcontent .pic img,
+.five .popcontent .pic img,
+.six .popcontent .pic img,
+.seven .popcontent .pic img {
+    width: 90%;
+    border: 2px solid #0B1654;
+}
+
+.one .popcontent .info,
+.two .popcontent .info,
+.three .popcontent .info,
+.four .popcontent .info,
+.five .popcontent .info,
+.six .popcontent .info,
+.seven .popcontent .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    margin: 0 0 0 5%;
+}
+
+.one .popcontent .info p,
+.two .popcontent .info p,
+.three .popcontent .info p,
+.four .popcontent .info p,
+.five .popcontent .info p,
+.six .popcontent .info p,
+.seven .popcontent .info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EFEBE2;
+    padding: 20px;
+    font-family: LD;
+    text-align: justify;
+}
+
+.intro .marquee {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    animation: scrolling 150s linear infinite;
+}
+
+
+
+
